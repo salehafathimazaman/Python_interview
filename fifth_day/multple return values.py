@@ -1,7 +1,13 @@
-user_input=input("enter A:")
-user_input_2=input("enter B:")
-A=int(user_input)
-B=int(user_input_2)
+try:
+
+    user_input=input("enter A:")
+    user_input_2=input("enter B:")
+    A=int(user_input)
+    B=int(user_input_2)
+
+except:
+    print("invalid inpu, please input only numbers")
+    exit()
 def multiplereturns(A, B):
     return A+B,A-B,A*B
 
