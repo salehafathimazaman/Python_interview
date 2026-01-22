@@ -1,8 +1,13 @@
-f=[1, 2, 3, 4, 5, 6]
+f=[1, 2, 7, 6,3]
 
-champ=f[0]
+l=len(f)
+print(l)
 
-for i in f:
-    if i>champ:
-        champ=i
-print(champ)
+for i in range(l-1):
+    for j in range(l-i-1):
+        if f[j]>f[j+1]:
+            f[j],f[j+1]=f[j+1],f[j]
+
+print(f)
+
+
